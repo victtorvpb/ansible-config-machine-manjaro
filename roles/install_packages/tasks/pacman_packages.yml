@@ -1,0 +1,4 @@
+- name: Install package brave
+  pacman:
+    name: brave
+    state: present

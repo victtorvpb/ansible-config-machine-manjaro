@@ -13,7 +13,12 @@
         name: git
       become: yes
 
-    - name: Remove unsed packages
+    - name: Remove unsued packages
       import_role:
         name: uninstall_packages
+      become: yes
+
+    - name: Install packages
+      import_role:
+        name: install_packages
       become: yes
