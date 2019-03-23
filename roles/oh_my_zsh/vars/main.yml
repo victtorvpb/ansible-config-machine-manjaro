@@ -1,1 +1,3 @@
 name_folder_dest_zsh: "{{home_folder}}/.oh-my-zsh"
+folder_custom_zsh: "{{name_folder_dest_zsh}}/custom"
+#wget -O .zshrc https://gist.githubusercontent.com/victtorvpb/0a1473b8fe9b0387129f1ac8eb62b1d1/raw/88c5b40df8fff446e478ad4684058f6feaeb65a2/zshrc

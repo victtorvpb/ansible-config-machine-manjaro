@@ -1,0 +1,11 @@
+---
+
+- name: Download theme zsh-completions
+  git:
+    repo: https://github.com/zsh-users/zsh-completions.git
+    dest: "{{folder_custom_zsh}}/plugins/zsh-completions"
+
+- name: Download theme zsh-autosuggestions
+  git:
+    repo: https://github.com/zsh-users/zsh-autosuggestions.git
+    dest: "{{folder_custom_zsh}}/plugins/zsh-autosuggestions"

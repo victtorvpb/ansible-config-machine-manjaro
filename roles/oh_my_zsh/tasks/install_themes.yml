@@ -1,0 +1,13 @@
+---
+
+- name: Download theme spaceship
+  git:
+    repo: https://github.com/denysdovhan/spaceship-prompt.git
+    dest: "{{folder_custom_zsh}}/themes/spaceship-prompt"
+
+- name: "Create symlink theme spaceship"
+  file:
+    src: "{{folder_custom_zsh}}/themes/spaceship-prompt/spaceship.zsh-theme"
+    dest: "{{folder_custom_zsh}}/themes/spaceship.zsh-theme"
+    state: link
+  become: yes

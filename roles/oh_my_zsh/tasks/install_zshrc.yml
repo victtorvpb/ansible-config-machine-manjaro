@@ -12,7 +12,7 @@
   copy:
     src: "{{name_folder_dest_zsh}}/templates/zshrc.zsh-template"
     dest: "{{home_folder}}/.zshrc"
-  become: yes
+  become: no
 
 
 - name: Backing up existing ~/.zshrc
