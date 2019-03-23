@@ -27,3 +27,8 @@
       import_role:
         name: oh_my_zsh
       become: yes
+    
+    - name: Install Pyenv
+      import_role:
+        name: pyenv
+      become: no

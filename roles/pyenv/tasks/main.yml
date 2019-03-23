@@ -1,0 +1,7 @@
+---
+
+- name: Install pyenv
+  git:
+    repo: https://github.com/pyenv/pyenv.git
+    dest: "{{home_folder}}/.pyenv"
+    
