@@ -3,3 +3,18 @@
   pacman:
       name: brave
       state: present
+
+- name: Install package Snap
+  pacman:
+      name: snapd
+      state: present
+
+- name: Install package deepin-terminal
+  pacman:
+      name: deepin-terminal
+      state: present
+
+- name: Install package deepin-screenshot
+  pacman:
+      name: deepin-screenshot
+      state: present
