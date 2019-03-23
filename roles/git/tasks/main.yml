@@ -1,9 +1,10 @@
 ---
-
-- git_config:
+- name: Config email git
+  git_config:
     name: user.email
     value: "{{git_email}}"
 
-- git_config:
+- name: Config name git
+  git_config:
     name: user.name
     value: "{{git_name}}"
