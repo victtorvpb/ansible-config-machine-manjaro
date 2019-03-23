@@ -6,10 +6,15 @@
 - name: Cloning  oh-my-zsh
   git:
     repo: https://github.com/robbyrussell/oh-my-zsh
-    dest: /home/victor/.oh-my-zsh
+    dest: "{{name_folder_dest_zsh}}"
 
 - name: Creating new ~/.zshrc
   copy:
-    src: /home/victor/.oh-my-zsh/templates/zshrc.zsh-template
-    dest: /home/victor/.zshrc
+    src: "{{name_folder_dest_zsh}}/templates/zshrc.zsh-template"
+    dest: "{{home_folder}}/.zshrc"
+  become: yes
+
+
+- name: Backing up existing ~/.zshrc
+  shell: chsh -s /bin/zsh
   become: yes

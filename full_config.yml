@@ -22,3 +22,8 @@
       import_role:
         name: install_packages
       become: yes
+
+    - name: Install and configure oh-my-zsh
+      import_role:
+        name: oh_my_zsh
+      become: yes
