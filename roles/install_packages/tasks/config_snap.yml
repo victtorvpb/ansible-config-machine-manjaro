@@ -1,0 +1,11 @@
+---
+
+- name: "Create symlink snap to /var/lib/snapd/snap"
+  file:
+    src: "/var/lib/snapd/snap"
+    dest: "/snap"
+    state: link
+  become: yes
+
+- name: Restart snapd
+  command: systemctl restart snapd

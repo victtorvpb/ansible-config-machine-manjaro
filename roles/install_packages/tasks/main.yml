@@ -1,2 +1,4 @@
 ---
 - include_tasks: pacman_packages.yml
+- include_tasks: config_snap.yml
+- include_tasks: snap_packages.yml

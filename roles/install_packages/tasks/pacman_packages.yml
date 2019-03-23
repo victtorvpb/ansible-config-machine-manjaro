@@ -18,3 +18,8 @@
   pacman:
       name: deepin-screenshot
       state: present
+
+- name: Install package python-pipenv
+  pacman:
+      name: python-pipenv
+      state: present

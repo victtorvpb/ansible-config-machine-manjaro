@@ -1,0 +1,11 @@
+---
+- name: Install spotify snap
+  command: snap install spotify
+
+- name: Install Sublime Snap
+  command: snap install sublime-text --classic
+
+- name: Install Vscode Snap
+  command: sudo snap install vscode --classic
+
+  
