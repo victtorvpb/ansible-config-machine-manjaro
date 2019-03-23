@@ -33,3 +33,8 @@
   pacman:
       name: zsh
       state: present
+
+- name: Install package zsh
+  pacman:
+      name: bat
+      state: present
