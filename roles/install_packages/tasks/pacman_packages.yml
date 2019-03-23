@@ -28,3 +28,8 @@
   pacman:
       name: vim
       state: present
+
+- name: Install package zsh
+  pacman:
+      name: zsh
+      state: present
