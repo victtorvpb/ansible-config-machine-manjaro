@@ -1,0 +1,2 @@
+[local]
+127.0.0.1 ansible_connection=local ansible_sudo_pass={pass_to_password}

@@ -1,0 +1,14 @@
+---
+- name: Configurations to "remote" host
+  hosts: local
+  remote_user: "{{user_remote}}"
+  become: yes
+  pre_tasks:
+    - name: update
+      raw: sudo pacman -Syyu "{{ not_confirm }}"
+
+  tasks:
+    - name: Setup Git
+      import_role:
+        name: git
+      become: yes  
