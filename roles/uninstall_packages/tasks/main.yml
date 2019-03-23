@@ -1,0 +1,6 @@
+---
+- name: Remove packages thunderbird, hexchat and pidgin
+  pacman:
+    name: thunderbird,hexchat,pidgin
+    state: absent
+    recurse: yes

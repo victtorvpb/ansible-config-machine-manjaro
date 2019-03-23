@@ -11,4 +11,9 @@
     - name: Setup Git
       import_role:
         name: git
-      become: yes  
+      become: yes
+
+    - name: Remove unsed packages
+      import_role:
+        name: uninstall_packages
+      become: yes
