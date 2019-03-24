@@ -34,7 +34,7 @@
       name: zsh
       state: present
 
-- name: Install package zsh
+- name: Install package bat
   pacman:
       name: bat
       state: present

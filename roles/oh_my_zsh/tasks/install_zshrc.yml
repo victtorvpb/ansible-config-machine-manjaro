@@ -17,4 +17,4 @@
 
 - name: Backing up existing ~/.zshrc
   shell: chsh -s /bin/zsh
-  become: yes
+  become: no
