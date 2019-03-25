@@ -9,3 +9,6 @@
 
 - name: Restart snapd
   command: systemctl restart snapd
+
+- name: Default staet
+  command: systemctl enable --now snapd.socket
