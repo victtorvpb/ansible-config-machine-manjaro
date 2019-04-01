@@ -15,6 +15,6 @@
   become: no
 
 
-- name: Backing up existing ~/.zshrc
+- name: Set zsh default
   shell: chsh -s /bin/zsh
   become: no
