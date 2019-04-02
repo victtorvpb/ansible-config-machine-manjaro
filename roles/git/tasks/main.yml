@@ -8,3 +8,7 @@
   git_config:
     name: user.name
     value: "{{git_name}}"
+
+- name: Set cache password git
+  shell: git config --global credential.helper 'cache --timeout=360000'
+  become: no
