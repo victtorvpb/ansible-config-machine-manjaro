@@ -6,6 +6,6 @@
   command: snap install sublime-text --classic
 
 - name: Install Vscode Snap
-  command: sudo snap install vscode --classic
+  command: sudo snap install code --classic
 
   
